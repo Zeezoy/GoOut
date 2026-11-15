@@ -41,7 +41,7 @@ JUnit + MockK + Compose UI Testing.
 ### Prasyarat
 
 - Android Studio (Ladybug/terbaru) dengan Android SDK 36
-- JDK 17 (bawaan Android Studio / JBR)
+- JDK 17 atau lebih baru untuk menjalankan Gradle (JBR bawaan Android Studio sudah cukup; bytecode aplikasi menargetkan Java 11 via `jvmTarget = "11"`)
 - Perangkat/emulator Android 8.0+ (API 26, dengan Google Play Services)
 - Akun Firebase (gratis, paket Spark cukup)
 - Google Maps API key
