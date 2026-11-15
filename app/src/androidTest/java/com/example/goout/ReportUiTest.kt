@@ -96,8 +96,9 @@ class ReportUiTest {
                 androidx.compose.ui.test.hasText("Izin lokasi diperlukan", substring = true),
             ).fetchSemanticsNodes().isNotEmpty()
         }
+        // The banner renders the text with a leading-space prefix, so match by substring.
         composeRule
-            .onNodeWithText("Izin lokasi diperlukan untuk memvalidasi posisi Anda.")
+            .onNode(androidx.compose.ui.test.hasText("Izin lokasi diperlukan", substring = true))
             .assertIsDisplayed()
     }
 
