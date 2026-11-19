@@ -23,6 +23,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.goout.domain.model.Corridor
 import com.example.goout.domain.model.DensityStatus
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Warning
+import androidx.compose.material3.Icon
 
 /** Rounded status chip, e.g. "MERAYAP" on its container color. */
 @Composable
@@ -132,5 +135,29 @@ private fun LegendRow(color: androidx.compose.ui.graphics.Color, label: String) 
     Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
         Box(Modifier.size(10.dp).background(color, CircleShape))
         Text(label, fontSize = 10.sp, color = GoOutColors.TextPrimary, lineHeight = 10.sp)
+    }
+}
+
+@Composable
+fun MacetWarning(corridorName: String, modifier: Modifier = Modifier) {
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .background(GoOutColors.MacetContainer, RoundedCornerShape(12.dp))
+            .padding(12.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Icon(
+            Icons.Filled.Warning,
+            contentDescription = null,
+            tint = GoOutColors.OnMacetContainer,
+            modifier = Modifier.size(20.dp),
+        )
+        Text(
+            "Peringatan: $corridorName sedang macet. Perkirakan waktu tempuh lebih lama.",
+            style = MaterialTheme.typography.bodySmall,
+            color = GoOutColors.OnMacetContainer,
+            modifier = Modifier.padding(start = 8.dp),
+        )
     }
 }

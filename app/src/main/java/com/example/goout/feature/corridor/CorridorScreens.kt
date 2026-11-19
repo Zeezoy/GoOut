@@ -47,6 +47,7 @@ import com.google.maps.android.compose.GoogleMap
 import com.google.maps.android.compose.MapUiSettings
 import com.google.maps.android.compose.Polyline
 import com.google.maps.android.compose.rememberCameraPositionState
+import com.example.goout.core.designsystem.MacetWarning
 
 /** Screen "Koridor" — list of the monitored corridors. */
 @Composable
@@ -188,6 +189,10 @@ fun CorridorDetailScreen(
                 } ?: "—",
             )
             DetailRow("Terakhir diperbarui", relativeTime(c.lastUpdated))
+            if (c.densityStatus == DensityStatus.MACET) {
+                Spacer(Modifier.height(8.dp))
+                MacetWarning(c.corridorName)
+            }
             if (c.densityStatus == DensityStatus.UNKNOWN) {
                 Spacer(Modifier.height(8.dp))
                 Text(
