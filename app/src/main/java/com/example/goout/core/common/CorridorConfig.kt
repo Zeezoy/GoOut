@@ -33,10 +33,10 @@ object CorridorConfig {
         corridorName = "Jl. Veteran",
         segmentLabel = "Bundaran UB → Simpang Matos",
         polyline = listOf(
-            GeoPoint(-7.952778, 112.611944), // Bundaran UB (approx)
-            GeoPoint(-7.955278, 112.613611),
-            GeoPoint(-7.957500, 112.616111),
-            GeoPoint(-7.959167, 112.618889), // near Matos (approx)
+            GeoPoint(-7.952549, 112.614432), // Bundaran UB (approx)
+            GeoPoint(-7.956445, 112.613331),
+            GeoPoint(-7.955962, 112.615460),
+            GeoPoint(-7.958464, 112.619791), // near Matos (approx)
         ),
     )
 
@@ -46,10 +46,10 @@ object CorridorConfig {
         corridorName = "Jl. Soekarno Hatta",
         segmentLabel = "Simpang Suhat → Jembatan Brantas",
         polyline = listOf(
-            GeoPoint(-7.934722, 112.657778), // Simpang Suhat (approx)
-            GeoPoint(-7.939444, 112.655278),
-            GeoPoint(-7.944167, 112.652500),
-            GeoPoint(-7.947500, 112.650833), // Jembatan Soehat / Brantas (approx)
+            GeoPoint(-7.936899, 112.626393), // Simpang Suhat (approx)
+            GeoPoint(-7.939502, 112.624926),
+            GeoPoint(-7.944557, 112.619401),
+            GeoPoint(-7.949631, 112.615646), // Jembatan Soehat / Brantas (approx)
         ),
     )
 
@@ -59,10 +59,10 @@ object CorridorConfig {
         corridorName = "Jl. MT Haryono",
         segmentLabel = "Dinoyo → Simpang Betek",
         polyline = listOf(
-            GeoPoint(-7.944444, 112.606389), // Dinoyo (approx)
-            GeoPoint(-7.946389, 112.609722),
-            GeoPoint(-7.948056, 112.613056),
-            GeoPoint(-7.949722, 112.616389), // toward Betek (approx)
+            GeoPoint(-7.936675, 112.605828), // Dinoyo (approx)
+            GeoPoint(-7.941447, 112.609124),
+            GeoPoint(-7.946374, 112.612600),
+            GeoPoint(-7.949659, 112.615088), // toward Betek (approx)
         ),
     )
 
